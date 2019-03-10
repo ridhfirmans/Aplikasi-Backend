@@ -17,4 +17,12 @@
     	insert into siswa (id, nis, nama, alamat, jenis_kelamin) 
     	values (#{id}, #{nis}, #{nama}, #{alamat}, #{jenisKelamin})
     </insert>
+    
+    <delete id="deleteSiswa" parameterType="String">
+    	delete from siswa where id = #{id}
+    </delete>
+    
+    <select id="findSiswa" resultMap="siswaResult" parameterType="String">
+    	select id, nis, nama, alamat, jenis_kelamin from siswa where id = #{id}
+    </select>
 </mapper>

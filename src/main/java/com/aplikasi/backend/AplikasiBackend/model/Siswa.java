@@ -3,17 +3,23 @@ package com.aplikasi.backend.AplikasiBackend.model;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.validation.constraints.NotNull;
 
 import org.hibernate.annotations.GenericGenerator;
+import org.hibernate.validator.constraints.NotEmpty;
 
 @Table(name="siswa")
 public class Siswa {
 	@Id @GeneratedValue(generator = "uuid")
     @GenericGenerator(name = "uuid", strategy = "uuid2")
 	private String id;
+	@NotNull @NotEmpty
 	private String nis;
+	@NotNull @NotEmpty
 	private String nama;
+	@NotNull @NotEmpty
 	private String alamat;
+	@NotNull @NotEmpty
 	private String jenisKelamin;
 	private Kelas kelas;
 	

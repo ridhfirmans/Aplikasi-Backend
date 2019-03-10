@@ -25,4 +25,15 @@ public class SiswaServiceImpl implements SiswaService{
 	public void saveSiswa(Siswa siswa){
 		siswaDao.saveSiswa(siswa);
 	}
+	
+	@Override
+	public void deleteSiswa(String id){
+		siswaDao.deleteSiswa(id);
+	}
+	
+	@Override
+	public Siswa findSiswa(String id){
+		Siswa siswa = siswaDao.findSiswa(id);
+		return siswa;
+	}
 }

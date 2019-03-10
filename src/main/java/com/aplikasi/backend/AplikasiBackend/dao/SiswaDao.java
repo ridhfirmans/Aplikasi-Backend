@@ -10,4 +10,6 @@ import com.aplikasi.backend.AplikasiBackend.model.Siswa;
 public interface SiswaDao {
 	public List<Siswa> getAllSiswa();
 	public void saveSiswa(Siswa siswa);
+	public void deleteSiswa(String id);
+	public Siswa findSiswa(String id);
 }

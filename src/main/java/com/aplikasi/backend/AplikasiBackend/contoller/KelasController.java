@@ -12,7 +12,7 @@ import com.aplikasi.backend.AplikasiBackend.model.Kelas;
 import com.aplikasi.backend.AplikasiBackend.service.KelasService;
 
 @RestController
-@RequestMapping("/api")
+//@RequestMapping("/api")
 public class KelasController {
 
 	@Autowired
