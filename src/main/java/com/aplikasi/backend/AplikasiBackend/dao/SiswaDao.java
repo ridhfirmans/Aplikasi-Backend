@@ -12,4 +12,5 @@ public interface SiswaDao {
 	public void saveSiswa(Siswa siswa);
 	public void deleteSiswa(String id);
 	public Siswa findSiswa(String id);
+	public void updateSiswa(Siswa siswa);
 }

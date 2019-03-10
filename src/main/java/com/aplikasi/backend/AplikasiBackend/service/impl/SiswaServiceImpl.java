@@ -36,4 +36,9 @@ public class SiswaServiceImpl implements SiswaService{
 		Siswa siswa = siswaDao.findSiswa(id);
 		return siswa;
 	}
+	
+	@Override
+	public void updateSiswa(Siswa siswa){
+		siswaDao.updateSiswa(siswa);
+	}
 }

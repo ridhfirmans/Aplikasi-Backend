@@ -25,4 +25,13 @@
     <select id="findSiswa" resultMap="siswaResult" parameterType="String">
     	select id, nis, nama, alamat, jenis_kelamin from siswa where id = #{id}
     </select>
+    
+    <update id="updateSiswa" parameterType="com.aplikasi.backend.AplikasiBackend.model.Siswa">
+    	update siswa set 
+    	nis = #{nis}, 
+    	nama = #{nama},
+    	alamat = #{alamat},
+    	jenis_kelamin = #{jenisKelamin}
+    	where id = #{id}
+    </update>
 </mapper>

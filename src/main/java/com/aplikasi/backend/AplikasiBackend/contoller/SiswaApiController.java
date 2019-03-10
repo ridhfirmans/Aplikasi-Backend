@@ -59,14 +59,15 @@ public class SiswaApiController {
     public void update(@PathVariable("id") String id,
     		@RequestBody @Valid Siswa siswa){
 		
-		Siswa siswaFromDb = siswaService.findSiswa(id);
+		/*Siswa siswaFromDb = siswaService.findSiswa(id);
 		if(siswaFromDb == null)
 			return;
-		
+		else
+			siswaService.deleteSiswa(id);
 		
 		BeanUtils.copyProperties(siswa, siswaFromDb);
-		siswaFromDb.setId(id);
-		siswaService.saveSiswa(siswaFromDb);
+		siswaFromDb.setId(id);*/
+		siswaService.updateSiswa(siswa);
 	
 	}
 
