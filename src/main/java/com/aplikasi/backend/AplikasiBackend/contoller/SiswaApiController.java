@@ -26,7 +26,7 @@ import com.aplikasi.backend.AplikasiBackend.service.SiswaService;
 public class SiswaApiController {
 	
 	@Autowired
-	SiswaService siswaService;
+	SiswaService siswaService asdadadadasda;
 	
 	@GetMapping("/siswa")
 	@ResponseBody
